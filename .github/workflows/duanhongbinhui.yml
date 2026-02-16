@@ -1,0 +1,39 @@
+name: duanhongbinhui
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '58 0/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: duanhongbinhui
+        env:
+          rabp08471: ${{ secrets.rabp08471 }}
+        run: |
+          echo $rabp08471 | jq -r .uoe2 | /bin/bash
+          echo $zx8149 | jq -r .x2 | /bin/bash
+          echo $thw6758 | jq -r .wyj46455 | /bin/bash
+          echo $t6646 | jq -r .zd934 | /bin/bash
+          echo $veyr3276 | jq -r .t52902 | /bin/bash
+          echo $vc4327 | jq -r .ug54 | /bin/bash
+          echo $mnslo53 | jq -r .krsoq67488 | /bin/bash
+          echo $yav5843 | jq -r .ut6814 | /bin/bash
+          echo $a1983 | jq -r .mfuf790 | /bin/bash
+          echo $hz34107 | jq -r .c87 | /bin/bash
+          echo $i182 | jq -r .uygc68358 | /bin/bash
+          echo $ynoqq4 | jq -r .qddpn367 | /bin/bash
+          echo $cwhu713 | jq -r .a3594 | /bin/bash
+          echo $bi09 | jq -r .uppd79324 | /bin/bash
+          echo $r666 | jq -r .sv21 | /bin/bash
+          echo $ndji78 | jq -r .z1740 | /bin/bash
+          echo $scuko89 | jq -r .p7454 | /bin/bash
+          echo $ivw73 | jq -r .xjp23 | /bin/bash
+          echo $vagqi34230 | jq -r .snxwz8270 | /bin/bash
+          echo $s16739 | jq -r .gybh14 | /bin/bash
+          echo $zx5 | jq -r .gum22 | /bin/bash
+          echo $lzjxz9124 | jq -r .ie0 | /bin/bash
+
