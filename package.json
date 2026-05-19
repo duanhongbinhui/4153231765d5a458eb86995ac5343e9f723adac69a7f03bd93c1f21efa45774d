@@ -1,0 +1,12 @@
+{
+  "name": "stream-handler-4921e7",
+  "version": "1.0.0",
+  "description": "A stream-handler utility",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": ["stream-handler", "utility"],
+  "license": "MIT"
+}
